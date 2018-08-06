@@ -2,5 +2,11 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_151"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/develop/workspaces/JavaSec/lib/commons-codec-1.11.jar" sourcepath="D:/develop/workspaces/JavaSec/lib/commons-codec-1.11-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/develop/workspaces/JavaSec/lib/commons-codec-1.11-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
