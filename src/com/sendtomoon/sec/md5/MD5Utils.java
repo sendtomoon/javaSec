@@ -6,13 +6,11 @@ import java.security.NoSuchAlgorithmException;
 public class MD5Utils {
 
 	public static byte[] encodeMD5ForJDK(String plaintext) throws NoSuchAlgorithmException {
-			MessageDigest md = MessageDigest.getInstance(plaintext);
-			byte[] b = md.digest();
-			return b;
+		MessageDigest md = MessageDigest.getInstance(plaintext);
+		byte[] b = md.digest();
+		return b;
 	}
-	
-	
-	
+
 	public static void main(String[] args) {
 		try {
 			encodeMD5ForJDK("md5");
