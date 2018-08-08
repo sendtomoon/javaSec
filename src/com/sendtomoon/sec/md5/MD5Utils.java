@@ -5,19 +5,19 @@ import java.security.NoSuchAlgorithmException;
 
 public class MD5Utils {
 
-	public static void encodeMD5ForJDK(String plaintext) {
-		try {
+	public static byte[] encodeMD5ForJDK(String plaintext) throws NoSuchAlgorithmException {
 			MessageDigest md = MessageDigest.getInstance(plaintext);
 			byte[] b = md.digest();
-			System.err.println(b);
-			System.err.println(new String(b));
+			return b;
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		try {
+			encodeMD5ForJDK("md5");
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}
-		
-	}
-	
-	public static void main(String[] args) {
-		encodeMD5ForJDK("md5");
 	}
 }
